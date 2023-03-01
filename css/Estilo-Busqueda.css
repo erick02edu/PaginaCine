@@ -1,0 +1,471 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+
+    background-color: rgba(1, 1, 1, 0.87);
+}
+
+#Home a{
+    text-decoration: none;
+    color:red;
+}
+
+body::-webkit-scrollbar{
+    width: 7px;
+}
+
+/*Barra del scroll*/
+body::-webkit-scrollbar-thumb{
+    background: red;
+    border-radius: 10px;
+}
+
+.Encabezado{
+    width: 100%;
+    overflow: hidden;
+}
+
+.Encabezado ul{
+    display:inline-flex;
+    padding: 0;
+    border: 0;
+    width: 200%; /*Por cada imagen del slider agregar un 100%*/
+}
+
+
+
+
+#Menu{
+    width: 100%;
+    background: black;
+    position: fixed;
+    z-index: 100; /* Sin efecto, es un elemento no-posicionado.*/   
+}
+
+
+#MenuLateral{
+    transform:translateX(-100%);
+}
+
+#Lista-Menu li{
+    line-height: 85px; /*Controla el espacio entre elementos de una lista altura de la linea */
+    display: inline-block; /*Pone los elementos en una sola lista   mostrar(display) in line (en linea)*/ 
+    color: white;
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left:30px; /*Margen entre cada elemento*/
+    text-decoration: none;
+}
+
+
+.tooltip{
+    display: inline;
+}
+
+.tooltiptext ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 0px;
+}
+
+.tooltiptext {
+    
+    visibility: hidden;
+    width: 21%;
+    height: 100%;
+    
+    background-color: rgb(255, 255, 255);
+    color: #fff;
+    border-radius: 9px;
+   
+    
+    /* Posicion del tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    left: 7%;
+}
+
+.tooltiptext ul li{
+    line-height: 0px;
+    margin-left: 0px;
+}
+
+.tooltiptext ul li a{
+    display: inline-block;
+    text-decoration: none; 
+    line-height: 0;
+}
+
+
+.tooltiptext a:hover{
+    color: red;
+    
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+#Lista-Menu li:hover {
+    color: red;
+    cursor: pointer;
+}
+
+
+ul{
+   border: 0; 
+}
+
+li{
+    list-style: none;
+    
+}
+
+
+#MenuLateral{
+    border: 0;
+    position: fixed;
+    width: 21%;
+    height: 100%;
+    color: white;
+    z-index: 100;
+    background-color: black;
+    
+    transition: transform 0.5s ease;
+}
+
+
+
+#cerrar{
+    
+    padding-left: 85%;
+    padding-top: 16%;
+    padding-bottom: 4%;
+
+}
+
+
+
+.Opciones{
+   padding: 20px;
+}
+
+
+.Opciones:hover{
+    background:rgba(21, 21, 21, 0.92);
+}
+
+#MenuLateral ul li a{
+    
+    color: white;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:14px ;
+}
+
+#MenuLateral ul li a:hover{
+    color: red;
+}
+
+
+
+.Buscar{
+    display: inline;
+    /*border: solid 4px red;*/
+    padding-right: 0%;
+    position: relative;  
+    padding-right: 20px; 
+    float: right;
+    margin-right: 3%;
+}
+
+#input{
+    background-color: white;
+    border-radius: 16px;
+    color:black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding-left:40px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    outline: none;
+    position: relative;
+}
+
+.BotonBuscar{
+    
+    background-color: red;
+    color: white;
+    transform: scale(1.6);
+    padding: 4px 4px;
+    border-radius: 10px;
+    margin-left: 10px;
+    
+}
+
+
+
+.Barra{
+    display: inline;
+    position: relative;
+}
+
+
+.input-wrapper {
+    position: relative;
+    width: 271px;
+    z-index: -1;
+ }
+
+ #Micro {
+    transform: scale(1.5);
+    color: #000000;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-210%);
+    z-index: 100;
+ }
+ 
+ #Micro:hover{
+    color: red;
+ }
+
+ .VentanaMicro{
+    position: fixed;
+    top:20%;
+    left: 20%;
+    background: black;
+    border-radius: 10px;
+    width: 60%;
+    height: 70%;
+    z-index: 100;
+    opacity:0;
+    transition: all 0.7s ease;
+    display: none;
+}
+
+.contenedor{
+
+    z-index: 100;
+    color:red;
+    margin-top: 10%;
+    margin-left: 70%;
+    transform: scale(2.5);  
+    
+}
+
+#Texto{
+    
+    color: white;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 5%;
+    padding-left: 35%;
+
+}
+
+#Cerrar{
+    transform: scale(1.7);
+    color: white;
+    float: right;
+    margin-top: 4%;
+    margin-right: 4%;
+}
+
+#Cerrar:hover{
+    color: red;
+}
+
+
+#Resultados{
+   
+    padding-top: 8%;
+    width: 100%;
+    
+}
+
+.Peliculas{
+    width: 15%;
+    display: inline-block;
+    margin: 0 2%; 
+    background-color: rgba(9, 9, 9, 0.9);
+    color: white; 
+    border-radius: 10px;
+    margin-bottom: 2%;
+    z-index: 99;
+}
+
+.InfoPelicula{
+
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-left:5%;
+    padding-top: 3%; 
+    font-size: 10px;
+    margin-bottom: 10%;
+}
+
+
+
+.TituloPelicula{
+    font-size: 15px;
+    display: inline;
+}
+
+
+
+
+.botonSubir:hover{
+    cursor: pointer;
+}
+
+.Formularios{
+    display: inline;
+}
+
+#Inicio2{
+    transform: scale(1.4);
+
+}
+
+#Inicio2 :hover{
+    color: rgb(255, 0, 0)
+}
+
+
+.VentanaSesion{
+    position: fixed;
+    top:20%;
+    left: 15%;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 35%;
+    height: 70%;
+    z-index: 101;
+    opacity:0;
+    transition: all 0.7s ease;
+    display: none;
+}
+
+.LogoCine{
+
+    margin-left: 63%;
+    margin-top: 37%;
+    transform: scale(2.4);
+}
+
+.VentanaLogeo{
+    position: fixed;
+    top: 18%;
+    left: 47%;
+    background: white;
+    width: 35%;
+    height: 70%;
+    z-index: 101;
+    border-radius: 10px;
+    border-top:20px solid red;
+}
+
+.VentanaLogeo h1{
+    padding-top: 10%;
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: red;
+    text-align: center;
+    padding-left: 5%;
+}
+
+.VentanaLogeo h4{
+
+    padding-left: 20px;
+    padding-top: 5%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(108, 79, 79);
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+
+.InputVentana{
+    margin-left: 16%;
+    margin-top: 5%;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgba(50, 54, 59, 0.308);
+
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 3%;
+
+    width: 63%;
+ 
+}
+
+#ButtonIniciar{
+    margin-left: 16%;
+    margin-top: 5%;
+    background: red;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 63%;
+    height: 5%;
+}
+
+#CerrarInicio{
+    border-radius:10px;
+    transform: scale(1.4);
+    color: rgb(255, 0, 0);
+    float: right;
+    margin-top: 4%;
+    margin-right: 4%;
+    background-color: rgb(255, 255, 255);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#CerrarInicio:hover{
+    color: rgb(255, 255, 255);
+    background: rgb(255, 0, 0);
+}
+
+.contenedor2{
+    font-size: 20px;
+    z-index: 100;
+    color:red;
+    margin-top: 10%;
+}
+
+#capa{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(1, 1, 1, 0.621);
+    z-index: 100;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.7s ease;
+    visibility: hidden;
+    display: none;
+}
+
+.botonSubir{
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: rgba(0, 0, 0, 0);
+
+}

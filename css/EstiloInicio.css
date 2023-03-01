@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background: rgba(206, 206, 206, 0.429);
+}
+    
+
+#Menu{
+  width: 100%;
+  background: rgb(231, 48, 48);
+  height: 10%;
+  position: fixed;
+  z-index: -1; /* Sin efecto, es un elemento no-posicionado.*/
+  
+}
+
+
+#Lista-Menu li{
+  line-height: 60px; /*Controla el espacio entre elementos de una lista altura de la linea */
+  display: inline; /*Pone los elementos en una sola lista   mostrar(display) in line (en linea)*/ 
+  color: white;
+  font-size: 15px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin-left:3%; /*Margen entre cada elemento*/
+  text-decoration: none;
+  float: right;
+}
+
+#Lista-Menu{
+  padding-right: 4%;
+}
+
+
+#Lista-Menu li:hover {
+  color: rgb(5, 5, 5);
+  cursor: pointer;
+}
+
+
+body::-webkit-scrollbar{
+    width: 7px;
+}
+
+/*Barra del scroll*/
+body::-webkit-scrollbar-thumb{
+    background: red;
+    border-radius: 10px;
+}
+
+#MenuLateral{
+  position: fixed;
+  height: 100vh;
+  width: 15%;
+  transition: all 0.7s ease;
+}
+
+#rellenar{
+  background: rgb(255, 255, 255);
+  height: 100%;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+#rellenar a{
+  list-style: none;
+  text-decoration: none;
+}
+#rellenar a li{
+  color:black;
+}
+
+.opciones:hover{
+
+  background: rgba(223, 221, 221, 0.633);
+}
+.opciones{
+  background: rgb(255, 255, 255);
+}
+
+#ListaBar{
+  padding-top: 2%;
+  padding-bottom: 7%;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#btnBar{
+  transform: translateY(-15%);
+  /*transform: translateX(120%);*/
+  margin-left: 30%;
+  transition: all 0.7s ease;
+
+}
+
+#ListaBar li{
+  padding-left: 15%;
+  display: inline-block;
+
+}
+
+#Logo{
+  transform: translateY(20%);
+}
+
+#OpcionBar li{
+  display: inline;
+}
+
+#Bar{
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.alinear{
+  overflow: hidden;
+  padding-left: 15%;
+  transition: all 0.7s ease;
+}
+
+.Texto{
+  display:inline;
+  transition: all 0.7s ease;
+  /*opacity: 0;*//*Oculta el texto*/
+}
+
+.alinear2{
+  padding-left: 15%;
+}
+.alinear li{
+  display: inline-block;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  padding-left: 3%;
+}
+
+#Bienvenida{
+  background: white;
+  position: absolute;
+  top: 14%;
+  left: 17%;
+  /*left: 7%;*/
+  overflow: hidden;
+  width: 80%;
+  /*width: 90%;*/
+  height: 27%;
+  border-radius: 7px;
+
+  transition: all 0.6s ease;
+}
+#btnComenzar{
+  padding:1% 5%;
+  margin-left: 2%;
+  margin-top: 2%;
+  background: rgb(231, 48, 48);
+  color: white;
+  border-radius: 6px;
+}
+#TxtBienvenida{
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 2% 2%;
+}
+#Saludo{
+  padding-left: 2%;
+}
+
+#Gestion{
+  position: absolute;
+  top: 15%;
+  left: 19%;
+  /*left: 7%;*/
+  overflow: hidden;
+  width: 80%;
+  /*width: 90%;*/
+  height: 27%;
+  border-radius: 7px;
+  transition: all 0.6s ease;
+  display: inline;
+  opacity: 0;
+  font-size: 25px;
+  font-weight: 100;
+}
+
+#Gestion ul{
+  display: inline;
+}
+
+
+
+#add{
+  position: absolute;
+  padding:1% 4%;
+  
+  left: 75%;
+  background: rgb(231, 48, 48);
+  color: white;
+  border-radius: 6px;
+}
+
+
+#Ajustes{
+  position: absolute;
+  top: 16%;
+  left: 19%;
+  /*left: 7%;*/
+  overflow: hidden;
+  width: 80%;
+  /*width: 90%;*/
+  height: 27%;
+  border-radius: 7px;
+  transition: all 0.6s ease;
+  display: inline;
+  opacity: 0;
+  font-size: 25px;
+  font-weight: 100;
+}
+
+
+
+#Bugs{
+  position: absolute;
+  top: 16%;
+  left: 19%;
+  /*left: 7%;*/
+  overflow: hidden;
+  width: 80%;
+  /*width: 90%;*/
+  height: 27%;
+  border-radius: 7px;
+  transition: all 0.6s ease;
+  display: inline;
+  opacity: 0;
+  font-size: 25px;
+  font-weight: 100;
+}
+
+#btnPrueba{
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
+
+
+/*Preloader*/
+.lds-facebook {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+
+
+  }
+  .lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background: #ff0000;
+    animation: lds-facebook 0.9s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  .lds-facebook div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+  }
+  .lds-facebook div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.12s;
+  }
+  .lds-facebook div:nth-child(3) {
+    left: 56px;
+    animation-delay: 0;
+  }
+  @keyframes lds-facebook {
+    0% {
+      top: 8px;
+      height: 64px;
+    }
+    30%, 100% {
+      top: 24px;
+      height: 32px;
+    }
+  }
+
+  #cargado{
+    transition: transform 1s ease;
+  }
+
+  .centrado{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 102;
+    background-color: black;
+  }
+
+  .hidden{
+    overflow: hidden;
+  }
